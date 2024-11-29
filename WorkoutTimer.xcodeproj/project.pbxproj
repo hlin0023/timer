@@ -17,6 +17,11 @@
 		BADB8B262CF94E23007EEED2 /* WorkoutTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB8B252CF94E23007EEED2 /* WorkoutTimerTests.swift */; };
 		BADB8B302CF94E23007EEED2 /* WorkoutTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB8B2F2CF94E23007EEED2 /* WorkoutTimerUITests.swift */; };
 		BADB8B322CF94E23007EEED2 /* WorkoutTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB8B312CF94E23007EEED2 /* WorkoutTimerUITestsLaunchTests.swift */; };
+		BADB8B442CF96D42007EEED2 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB8B432CF96D42007EEED2 /* MulticastDelegate.swift */; };
+		BADB8B482CF970D9007EEED2 /* Time+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB8B462CF970D9007EEED2 /* Time+CoreDataClass.swift */; };
+		BADB8B492CF970D9007EEED2 /* Time+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB8B472CF970D9007EEED2 /* Time+CoreDataProperties.swift */; };
+		BADB8B4C2CF97279007EEED2 /* DtabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB8B4B2CF97279007EEED2 /* DtabaseProtocol.swift */; };
+		BADB8B4E2CF9735F007EEED2 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB8B4D2CF9735F007EEED2 /* CoreDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		BADB8B2B2CF94E23007EEED2 /* WorkoutTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADB8B2F2CF94E23007EEED2 /* WorkoutTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimerUITests.swift; sourceTree = "<group>"; };
 		BADB8B312CF94E23007EEED2 /* WorkoutTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BADB8B432CF96D42007EEED2 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		BADB8B462CF970D9007EEED2 /* Time+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Time+CoreDataClass.swift"; path = "WorkoutTimer/DataModel/Time+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BADB8B472CF970D9007EEED2 /* Time+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Time+CoreDataProperties.swift"; path = "WorkoutTimer/DataModel/Time+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BADB8B4B2CF97279007EEED2 /* DtabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DtabaseProtocol.swift; sourceTree = "<group>"; };
+		BADB8B4D2CF9735F007EEED2 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,8 @@
 		BADB8AFF2CF94E21007EEED2 = {
 			isa = PBXGroup;
 			children = (
+				BADB8B462CF970D9007EEED2 /* Time+CoreDataClass.swift */,
+				BADB8B472CF970D9007EEED2 /* Time+CoreDataProperties.swift */,
 				BADB8B0A2CF94E21007EEED2 /* WorkoutTimer */,
 				BADB8B242CF94E23007EEED2 /* WorkoutTimerTests */,
 				BADB8B2E2CF94E23007EEED2 /* WorkoutTimerUITests */,
@@ -101,6 +113,8 @@
 		BADB8B0A2CF94E21007EEED2 /* WorkoutTimer */ = {
 			isa = PBXGroup;
 			children = (
+				BADB8B4A2CF97250007EEED2 /* Database */,
+				BADB8B452CF97037007EEED2 /* DataModel */,
 				BADB8B0B2CF94E21007EEED2 /* AppDelegate.swift */,
 				BADB8B0D2CF94E21007EEED2 /* SceneDelegate.swift */,
 				BADB8B0F2CF94E21007EEED2 /* ViewController.swift */,
@@ -108,7 +122,6 @@
 				BADB8B172CF94E23007EEED2 /* Assets.xcassets */,
 				BADB8B192CF94E23007EEED2 /* LaunchScreen.storyboard */,
 				BADB8B1C2CF94E23007EEED2 /* Info.plist */,
-				BADB8B142CF94E21007EEED2 /* WorkoutTimer.xcdatamodeld */,
 			);
 			path = WorkoutTimer;
 			sourceTree = "<group>";
@@ -128,6 +141,24 @@
 				BADB8B312CF94E23007EEED2 /* WorkoutTimerUITestsLaunchTests.swift */,
 			);
 			path = WorkoutTimerUITests;
+			sourceTree = "<group>";
+		};
+		BADB8B452CF97037007EEED2 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				BADB8B142CF94E21007EEED2 /* WorkoutTimer.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		BADB8B4A2CF97250007EEED2 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BADB8B432CF96D42007EEED2 /* MulticastDelegate.swift */,
+				BADB8B4B2CF97279007EEED2 /* DtabaseProtocol.swift */,
+				BADB8B4D2CF9735F007EEED2 /* CoreDataController.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +293,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADB8B102CF94E21007EEED2 /* ViewController.swift in Sources */,
+				BADB8B492CF970D9007EEED2 /* Time+CoreDataProperties.swift in Sources */,
 				BADB8B162CF94E21007EEED2 /* WorkoutTimer.xcdatamodeld in Sources */,
+				BADB8B482CF970D9007EEED2 /* Time+CoreDataClass.swift in Sources */,
+				BADB8B442CF96D42007EEED2 /* MulticastDelegate.swift in Sources */,
+				BADB8B4E2CF9735F007EEED2 /* CoreDataController.swift in Sources */,
 				BADB8B0C2CF94E21007EEED2 /* AppDelegate.swift in Sources */,
+				BADB8B4C2CF97279007EEED2 /* DtabaseProtocol.swift in Sources */,
 				BADB8B0E2CF94E21007EEED2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -45,11 +45,30 @@
                                     <action selector="killTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADg-As-IQP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average: 00:00 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1U-lw-TZ0">
+                                <rect key="frame" x="147" y="438" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JK-nk-Ygj">
+                                <rect key="frame" x="177" y="466.5" width="61" height="35"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="savetime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tit-2m-ZDp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="0JK-nk-Ygj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="5cZ-tu-wuF"/>
                             <constraint firstItem="lVP-TE-jAo" firstAttribute="leading" secondItem="ffD-X2-DXa" secondAttribute="leading" id="7bF-Qe-ev5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0JK-nk-Ygj" secondAttribute="trailing" symbolic="YES" id="X45-L6-eRH"/>
+                            <constraint firstItem="g1U-lw-TZ0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X6y-pU-19B"/>
+                            <constraint firstItem="0JK-nk-Ygj" firstAttribute="top" secondItem="g1U-lw-TZ0" secondAttribute="bottom" constant="8" symbolic="YES" id="giL-85-ONm"/>
                             <constraint firstItem="ffD-X2-DXa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="l4C-sb-rR6"/>
                             <constraint firstItem="ffD-X2-DXa" firstAttribute="top" secondItem="lVP-TE-jAo" secondAttribute="bottom" constant="67" id="l6G-Wq-C9o"/>
                             <constraint firstItem="VDe-KN-OLT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n3k-PU-M2R"/>
@@ -57,6 +76,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ffD-X2-DXa" secondAttribute="bottom" constant="80" id="oSM-du-yOK"/>
                             <constraint firstItem="VDe-KN-OLT" firstAttribute="centerX" secondItem="ffD-X2-DXa" secondAttribute="centerX" id="tes-01-ukQ"/>
                             <constraint firstItem="lVP-TE-jAo" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ffD-X2-DXa" secondAttribute="trailing" id="vjr-cx-bo2"/>
+                            <constraint firstItem="g1U-lw-TZ0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xPu-fh-YTc"/>
+                            <constraint firstItem="g1U-lw-TZ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="yMB-WI-GTe"/>
                         </constraints>
                     </view>
                     <connections>

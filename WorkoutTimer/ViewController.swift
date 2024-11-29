@@ -8,17 +8,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+//    var listenerType: ListenerType
+    
+//    func onTimeChange(change: DatabaseChange, time: Int) {
+//        <#code#>
+//    }
+    
     
     @IBOutlet weak var timeCount: UILabel!
     var timer :Timer?
     var counter = 0 // count for timer
-
+    var toavg = 0 // count for timer
+    weak var databaseController: DatabaseProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        databaseController = appDelegate.databaseController
+        
     }
 
-
+    
+    
     @IBAction func start(_ sender: Any) {
         if timer == nil{
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
@@ -40,8 +53,19 @@ class ViewController: UIViewController {
         timer = nil
         
         print("This is second \(secondsToHoursMinutesSeconds(counter)) s")
+        toavg = counter
         counter = 0
 //        print(secondsToHoursMinutesSeconds(100000))
+        print(toavg)
+    }
+    
+    @IBAction func savetime(_ sender: Any) {
+        
+        print(toavg)
+        print(databaseController as Any)
+//        databaseController!.addTime(counts: toavg)
+//        
+        
     }
     
     // pop up windows display message
