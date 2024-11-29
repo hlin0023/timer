@@ -16,10 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDe-KN-OLT">
+                                <rect key="frame" x="44.5" y="211" width="325.5" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVP-TE-jAo">
-                                <rect key="frame" x="167" y="672" width="80" height="40"/>
+                                <rect key="frame" x="157" y="615" width="100" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="sNP-az-yuw"/>
+                                    <constraint firstAttribute="height" constant="50" id="sNP-az-yuw"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Start"/>
@@ -28,9 +34,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffD-X2-DXa">
-                                <rect key="frame" x="167" y="789" width="80" height="40"/>
+                                <rect key="frame" x="157" y="732" width="100" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="qu9-jy-XPs"/>
+                                    <constraint firstAttribute="height" constant="50" id="qu9-jy-XPs"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
@@ -39,22 +45,16 @@
                                     <action selector="killTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADg-As-IQP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDe-KN-OLT">
-                                <rect key="frame" x="44.5" y="211" width="325.5" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lVP-TE-jAo" firstAttribute="leading" secondItem="ffD-X2-DXa" secondAttribute="leading" id="7bF-Qe-ev5"/>
-                            <constraint firstItem="ffD-X2-DXa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="167" id="l4C-sb-rR6"/>
-                            <constraint firstItem="ffD-X2-DXa" firstAttribute="top" secondItem="lVP-TE-jAo" secondAttribute="bottom" constant="77" id="l6G-Wq-C9o"/>
+                            <constraint firstItem="ffD-X2-DXa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="l4C-sb-rR6"/>
+                            <constraint firstItem="ffD-X2-DXa" firstAttribute="top" secondItem="lVP-TE-jAo" secondAttribute="bottom" constant="67" id="l6G-Wq-C9o"/>
                             <constraint firstItem="VDe-KN-OLT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n3k-PU-M2R"/>
                             <constraint firstItem="VDe-KN-OLT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="163" id="noT-Eb-mbk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ffD-X2-DXa" secondAttribute="bottom" constant="33" id="oSM-du-yOK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ffD-X2-DXa" secondAttribute="bottom" constant="80" id="oSM-du-yOK"/>
                             <constraint firstItem="VDe-KN-OLT" firstAttribute="centerX" secondItem="ffD-X2-DXa" secondAttribute="centerX" id="tes-01-ukQ"/>
                             <constraint firstItem="lVP-TE-jAo" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ffD-X2-DXa" secondAttribute="trailing" id="vjr-cx-bo2"/>
                         </constraints>
